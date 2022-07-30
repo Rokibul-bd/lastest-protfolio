@@ -1,0 +1,98 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    /* width:1440px;
+    margin:0 auto; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+}
+/* utiliteis  */
+:root{
+    --custom-color:#289BDE;
+    --orange-color:orange;
+    --bg-white-color:#FFFFFF;
+    --watch-color:#FEE5DF;
+}
+a{
+    text-decoration: none;
+}
+.custom-color{
+    color:var(--custom-color)
+}
+.custom-bg-color{
+    background:var(--custom-color)
+}
+.watch-color{
+    background:var(--watch-color);
+    padding:5px 10px;
+    border-radius: 5px;
+    color:#FF4A60;
+}
+.btn{
+    transition:0.3s all ease;
+}
+.bg-white-color{
+    background:var(--bg-white-color);
+}
+
+/* start css style  */
+/* navbar section  */
+.navbar-brand img{
+    width:80px;
+    height:60px;
+    object-fit: cover;
+}
+.banner{
+    width:100%;
+    position:relative;
+}
+.banner .banner-fixed{
+    position:absolute;
+    left:16%;
+    top:40%;
+}
+.banner-fixed .d-block i, .social-icon a i{
+    font-size:25px;
+    color:var(--custom-color);
+    padding-top:20px;
+    transition:0.1s;
+}
+.social-icon a i{
+    color:#fff;
+}
+.banner-fixed .d-block i, .social-icon a i:hover{
+    color:var(--orange-color);
+    transform:scale(1.2);
+}
+.resume-btn:hover{
+    background:transparent;
+    color:var(--custom-color) !important;
+    outline:1px solid var(--custom-color);
+}
+
+.team-img{
+    width:100px;
+    height:100px;
+    margin-top: -60px;
+}
+#team p{
+    font-size:12px;
+}
+.contact-form{
+    display:flex;
+    justify-content: center;
+}
+.contact-form form{
+    width:100vw;
+    
+}
+@media (min-width:768px){
+    .contact-form form{
+        width:40vw;
+    }
+}
